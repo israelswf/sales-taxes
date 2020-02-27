@@ -9,12 +9,10 @@ import com.liferay.salestaxes.model.ItemCategory;
 public class ItemListMock {
 	
 	public static List<Item> getItemListMock() {
-		Item book = new Item("Book", false, 12.49, ItemCategory.BOOK);
-		Item cd = new Item("CD", false, 14.99, ItemCategory.OTHER);
+		Item chocolate = new Item("Chocolate", false, 0.85, 0.85, ItemCategory.FOOD);
 
 		List<Item> itemList = new ArrayList<>();
-		itemList.add(book);
-		itemList.add(cd);
+		//itemList.add(chocolate);
 		
 		return itemList;
 	}

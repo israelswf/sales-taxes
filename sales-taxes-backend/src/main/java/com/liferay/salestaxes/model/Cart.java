@@ -8,12 +8,13 @@ public class Cart implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private List<Item> items;
 	private double totalAmmount;
+	private double totalTaxes;
 
-	public List<Item> getProducts() {
+	public List<Item> getItems() {
 		return items;
 	}
 
-	public void setProducts(List<Item> items) {
+	public void setItems(List<Item> items) {
 		this.items = items;
 	}
 
@@ -23,6 +24,14 @@ public class Cart implements Serializable {
 
 	public void setTotalAmmount(double totalAmmount) {
 		this.totalAmmount = totalAmmount;
+	}
+
+	public double getTotalTaxes() {
+		return totalTaxes;
+	}
+
+	public void setTotalTaxes(double totalTaxes) {
+		this.totalTaxes = totalTaxes;
 	}
 
 }
