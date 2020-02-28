@@ -19,7 +19,7 @@ class TaxProcessorTest {
 
 	@Test
 	void taxesShouldBeZero() {
-		Item item = new Item("Chocolate", false, 0.85, 0.85, ItemCategoryEnum.FOOD);
+		Item item = new Item(1L, "Chocolate", false, 0.85, 0.85, ItemCategoryEnum.FOOD);
 		double taxes = taxProcessor.applyTaxes(item);
 		assertEquals(0.0, taxes, "Taxes should be zero");
 	}

@@ -1,13 +1,15 @@
 package com.liferay.salestaxes.mock;
 
+import java.util.ArrayList;
+
 import com.liferay.salestaxes.model.Cart;
+import com.liferay.salestaxes.model.Item;
 
 public class CartMock {
 	
 	public static Cart getCart() {
 		Cart cart = new Cart();
-		cart.setItems(ItemListMock.getItemListMock());
-		//cart.setTotalAmmount(0.85);
+		cart.setItems(new ArrayList<Item>());
 		return cart;
 	}
 	

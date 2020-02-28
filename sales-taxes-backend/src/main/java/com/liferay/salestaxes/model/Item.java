@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Item implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	private Long id;
 	private String name;
 	private boolean imported;
 	private double price;
@@ -14,13 +15,22 @@ public class Item implements Serializable {
 	public Item() {
 	}
 	
-	public Item(String name, boolean imported, double price, double grossPrice, ItemCategoryEnum category) {
+	public Item(Long id, String name, boolean imported, double price, double grossPrice, ItemCategoryEnum category) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.imported = imported;
 		this.price = price;
 		this.grossPrice = grossPrice;
 		this.category = category;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {
