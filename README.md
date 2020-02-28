@@ -3,7 +3,7 @@ Coding Problem: Sales Taxes
 
 ## About this Project
 
-## Setup
+The idea behind this project is to create a back-end Restful Java api, that will process and serve data in a JSON format to a front-end React application. The React app will be a simple application that contains a select drop-down list with all items available to purchase, and a component that will show the required receipt with taxes applied and the total price.
 
 ### Database
 
@@ -21,9 +21,9 @@ You can use a PostgreSQL GUI client (such as Postbird for example) to connect wi
 ### Back-end
 The back-end for solving this coding problem is a Restful Java Api created with Spring boot, that exposes 2 endpoints:
 
-1 - http://localhost/items
+1. http://localhost/items
 
-that lists all the items avaliable for purchase in a JSON format, to be consumed by the front-end and fill a dropbox, such as 
+that lists all the items avaliable for purchase in a JSON format, to be consumed by the front-end and fill a select drop-down, such as 
 
 ```
   {
@@ -41,7 +41,7 @@ that lists all the items avaliable for purchase in a JSON format, to be consumed
 ]
 ```
 
-2- http://localhost/cart
+2. http://localhost/cart
 
 that lists all purchased items with respective grossPrices (prices + taxes), totalAmmount and totalTaxes, such as 
 
