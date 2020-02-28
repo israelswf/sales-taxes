@@ -123,6 +123,7 @@ POST body example 3
 
 ### Front-end
 The front-end still have some pending features, due to deadline approach there wasn't possible to finish them.
+When started, front-end will be running on http://localhost:3000/.
 
 #### Pending
 - Finish the html form to POST purchased items to localhost:8080/cart
