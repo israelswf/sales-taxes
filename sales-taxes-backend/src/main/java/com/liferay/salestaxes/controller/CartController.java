@@ -25,7 +25,6 @@ public class CartController {
 	public Cart addItem(@RequestBody Item item) {
 		
 		Cart cart = cartService.addItem(item);
-		
 		return cart;
 	}
 }

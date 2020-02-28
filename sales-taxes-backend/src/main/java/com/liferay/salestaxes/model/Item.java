@@ -9,12 +9,12 @@ public class Item implements Serializable {
 	private boolean imported;
 	private double price;
 	private double grossPrice;
-	private ItemCategory category;
+	private ItemCategoryEnum category;
 	
 	public Item() {
 	}
 	
-	public Item(String name, boolean imported, double price, double grossPrice, ItemCategory category) {
+	public Item(String name, boolean imported, double price, double grossPrice, ItemCategoryEnum category) {
 		super();
 		this.name = name;
 		this.imported = imported;
@@ -47,11 +47,11 @@ public class Item implements Serializable {
 		this.price = price;
 	}
 	
-	public ItemCategory getCategory() {
+	public ItemCategoryEnum getCategory() {
 		return category;
 	}
 	
-	public void setCategory(ItemCategory category) {
+	public void setCategory(ItemCategoryEnum category) {
 		this.category = category;
 	}
 
